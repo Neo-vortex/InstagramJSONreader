@@ -7,9 +7,13 @@ Depends  on Newtonsoft.json
 how to use :
 
 ``` vb.net
+
+Imports InstagramJSONreader.InstagramJsonReader
+sub main()
 Dim test As New InstagramJSONreader.InstagramJsonReader(URI)
 Dim result As RootObject = test.GetInfo
 MsgBox(result.users(0).user.Username)
+end sub
 ```
 
 The URI is like :
